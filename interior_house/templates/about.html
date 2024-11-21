@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IN House - About</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="Images" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'CSS/styles.css' %}" rel="stylesheet">
+    <script src="{% static 'JS/main.js' %}"></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container position-relative" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-lg-0 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 display-5 text-white"><span class="text-primary">IN</span>House</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index" class="nav-link">Home</a>
+                        <a href="about" class="nav-link active">About</a>
+                        <a href="service" class="nav-link">Service</a>
+                        <a href="project" class="nav-link">Project</a>
+                        <a href="contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary py-5">
+        <div class="container py-5">
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1 class="mb-4 mb-md-0 text-primary text-uppercase">About Us</h1>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="btn btn-outline-primary" href="">Home</a>
+                        <i class="fas fa-angle-double-right text-primary mx-2"></i>
+                        <a class="btn btn-outline-primary disabled" href="">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-primary h-100 py-5 px-3">
+                        <i class="display-1 font-weight-normal text-secondary mb-3"></i>
+                        <img src="{% static 'Images/png/001-brick-wall.png' %}" alt="" style="width: 60px; height: 60px;">
+                        <h4 class="display-3 mb-3">00+</h4>
+                        <h1 class="m-0">Years Experience</h1>
+                    </div>
+                </div>
+                <div class="col-lg-7 m-0 my-lg-5 pt-5 pb-5 pb-lg-2 pl-lg-5">
+                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Learn About Us</h6>
+                    <h1 class="mb-4 section-title">We Are The Finest Interior Designing Firm In Your City</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae ratione eos cumque eius rem saepe quo. 
+                        Nemo distinctio beatae aliquid id nesciunt provident aut quaerat modi voluptate eos! Consequatur!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam tenetur, nemo et deserunt, accusamus 
+                        commodi libero quae quos quod officiis eligendi iure quaerat voluptate. Vel incidunt aspernatur dolore voluptate.
+                    </p>
+                    <div class="row py-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="{% static 'Images/png/002-home.png' %}" alt="" style="width: 30px; height: 30px;">
+                                <h1 class="font-weight-normal text-primary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Project Planning</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="{% static 'Images/png/003-staircase.png' %}" alt="" style="width: 30px; height: 30px;">
+                                <h1 class="font-weight-normal text-primary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Exterior & Interior</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="{% static 'Images/png/004-office.png' %}" alt=""  style="width: 30px; height: 30px;">
+                                <h1 class="font-weight-normal text-primary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Commercial Design</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="{% static 'Images/png/005-living-room.png' %}" alt="" style="width: 30px; height: 30px;">
+                                <h1 class="font-weight-normal text-primary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Residential Design</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mt-5 py-5 pr-lg-5">
+                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Why Choose Us?</h6>
+                    <h1 class="mb-4 section-title">00+ Years Of Expertise In The Interior Design Industry</h1>
+                    <p class="mb-4">We believe that each clients has distinct needs and preferences. To help you do this, we've gathered and most innovative designs to make your dream become reality.
+                      Having a plethora of ideas that can dazzle you at every turn. You are always welcomed to discuss the ideas. </p>
+                    <ul class="list-inline">
+                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>00+ Years Experience</h5></li>
+                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>Best Interior Design</h5></li>
+                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>Customer Satisfaction</h5></li>
+                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>Meticulous Details</h5></li>
+                    </ul>
+                    <a href="" class="btn btn-primary mt-3 py-2 px-4">View More</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">
+                        <img class="h-100" src="{% static 'Images/testimonial.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="py-5 px-4 h-100 bg-primary d-flex flex-column align-items-center justify-content-center">
+                        <h6 class="text-white font-weight-normal text-uppercase mb-3">Our Team</h6>
+                        <h1 class="mb-0 text-center">The magicians who transform and create space</h1>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 p-0 py-sm-5">
+                    <div class="position-relative p-0 py-sm-5">
+                        <div class="team d-flex flex-column text-center mx-3">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="{% static 'Images/Team-2.jpg' %}" alt="">
+                                <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-secondary text-center py-3">
+                                <h5 class="text-white">Name</h5>
+                                <p class="m-0">Working Role</p>
+                            </div>
+                        </div>
+                        <div class="team d-flex flex-column text-center mx-3">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="{% static 'Images/Team-2.jpg' %}" alt="">
+                                <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-secondary text-center py-3">
+                                <h5 class="text-white">Name</h5>
+                                <p class="m-0">Working Role</p>
+                            </div>
+                        </div>
+                        <div class="team d-flex flex-column text-center mx-3">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="{% static 'Images/Team-2.jpg' %}" alt="">
+                                <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-secondary text-center py-3">
+                                <h5 class="text-white">Name</h5>
+                                <p class="m-0">Working Role</p>
+                            </div>
+                        </div>
+                        <div class="team d-flex flex-column text-center mx-3">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="{% static 'Images/Team-2.jpg' %}" alt="">
+                                <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary text-center px-0" style="width: 38px; height: 38px;" href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-secondary text-center py-3">
+                                <h5 class="text-white">Name</h5>
+                                <p class="m-0">Working Role</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Chennai, India</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 000 000 0000</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Popular Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Follow Us On</h4>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-light rounded-circle mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light rounded-circle mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light rounded-circle mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light rounded-circle mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-5">
+            <p class="m-0 text-center text-white">
+                &copy;2024 <a class="text-white font-weight-bold" href="#">IN House</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="#">Meezar Web Ventures</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg back-to-top"><i class="fa fa-angle-double-up"></i></a>
+</body>
+</html>

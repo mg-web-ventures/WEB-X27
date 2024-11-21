@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="icon" type="image/x-icon" href="">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+    </head>
+    <body>
+        <div class="container-fluid position-relative nav-bar p-0">
+            <div class="container position-relative" style="z-index: 9;">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-lg-0 pl-lg-5">
+                    <a href="" class="navbar-brand">
+                        <h1 class="display-5 text-white"><span class="text-primary">IN</span>House</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="index" class="nav-link disabled">Home</a>
+                            <a href="about" class="nav-link disabled">About</a>
+                            <a href="service" class="nav-link disabled">Service</a>
+                            <a href="project" class="nav-link disabled">Project</a>
+                            <a href="contact" class="nav-link disabled">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="register-box">
+                <h2 class="display-5 text-secondary">Welcome to <span class="text-primary">IN</span>House!</h2>
+                {% load custom_filters %}
+                <form action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+                    <div class="input_box">
+                        <label for="username" class="label">Username</label>
+                        {{ form.username|add_class:"input-field form-control" }}
+                        <i class='bx bx-user-circle icon'></i>
+                    </div>
+                    <div class="input_box">
+                        <label for="password" class="label">Password</label>
+                        {{ form.password|add_class:"input-field form-control" }}
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="input_box">
+                        <label for="cnfrmpass" class="label">Confirm Password</label>
+                        {{ form.confirm_password|add_class:"input-field form-control" }}
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-lg btn-primary btn-block" id="registerbutton">Register</button>
+                    </div>
+                </form>
+            </div>
+            <script>
+                var showPasswordIcon = document.getElementById('show-password');
+                var passwordField = document.getElementById('pass');
+                
+                showPasswordIcon.addEventListener('click', function () {
+                    if (passwordField.type === 'password') {
+                        passwordField.type = 'text';
+                    }
+                    else {
+                        passwordField.type = 'password';
+                    }
+                });
+            </script>
+        </div>
+    </body>
+</html>

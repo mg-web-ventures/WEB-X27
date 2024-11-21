@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IN House - Contact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="Images" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'CSS/styles.css' %}" rel="stylesheet">
+    <script src="{% static 'JS/main.js' %}"></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container position-relative" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-lg-0 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 display-5 text-white"><span class="text-primary">IN</span>House</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index" class="nav-link">Home</a>
+                        <a href="about" class="nav-link">About</a>
+                        <a href="service" class="nav-link">Service</a>
+                        <a href="project" class="nav-link">Project</a>
+                        <a href="contact" class="nav-link active">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary py-5">
+        <div class="container py-5">
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Contact Us</h1>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="btn btn-outline-primary" href="">Home</a>
+                        <i class="fas fa-angle-double-right text-primary mx-2"></i>
+                        <a class="btn btn-outline-primary disabled" href="">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
+                        <div class="d-inline-flex border border-secondary p-4 mb-4">
+                            <h1 class="font-weight-normal text-secondary m-0 mr-3">
+                                <img src="{% static 'Images/png/011-location.png' %}" alt="" style="width: 40px; height: 40px;">
+                            </h1>
+                            <div class="d-flex flex-column">
+                                <h4>Our Office</h4>
+                                <p class="m-0 text-white">Chennai, India</p>
+                            </div>
+                        </div>
+                        <div class="d-inline-flex border border-secondary p-4 mb-4">
+                            <h1 class="flaticon-email font-weight-normal text-secondary m-0 mr-3">
+                                <img src="{% static 'Images/png/010-email.png' %}" alt="" style="width: 40px; height: 40px;">
+                            </h1>
+                            <div class="d-flex flex-column">
+                                <h4>Email Us</h4>
+                                <p class="m-0 text-white">info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="d-inline-flex border border-secondary p-4">
+                            <h1 class="flaticon-telephone font-weight-normal text-secondary m-0 mr-3">
+                                <img src="{% static 'Images/png/009-landline.png' %}" alt="" style="width: 40px; height: 40px;">
+                            </h1>
+                            <div class="d-flex flex-column">
+                                <h4>Call Us</h4>
+                                <p class="m-0 text-white">+91 000 000 0000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mb-5 my-lg-5 py-5 pl-lg-5">
+                    <div class="contact-form">
+                        {% load custom_filters %}
+                        <form action="{% url 'contact' %}" method="post">
+                            {% csrf_token %}
+                            <div class="control-group">
+                                {{ form.name.label_tag }}
+                                {{ form.name|add_class:"form-control input-field" }}
+                                <p class="help-block text-danger">{{ form.name.errors }}</p>
+                            </div>
+                            <div class="control-group">
+                                {{ form.email.label_tag }}
+                                {{ form.email|add_class:"form-control input-field" }}
+                                <p class="help-block text-danger">{{ form.email.errors }}</p>
+                            </div>
+                            <div class="control-group">
+                                {{ form.project_location.label_tag }}
+                                {{ form.project_location|add_class:"form-control input-field" }}
+                                <p class="help-block text-danger">{{ form.location.errors }}</p>
+                            </div>
+                            <div class="control-group">
+                                {{ form.describe_project.label_tag }}
+                                {{ form.describe_project|add_class:"form-control input-field" }}
+                                <p class="help-block text-danger">{{ form.project.errors }}</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit" id="submitbutton">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Chennai, India</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 000 000 0000</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Popular Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="d-flex justify-content-start mt-4">
+                    <a href="register">
+                        <button class="btn btn-primary py-3 px-5" type="submit" id="registerbutton">CLICK TO REGISTER!!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-5">
+            <p class="m-0 text-center text-white">
+                &copy;2024 <a class="text-white font-weight-bold" href="#">IN House</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="#">Meezar Web Ventures</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+</body>
+</html>
